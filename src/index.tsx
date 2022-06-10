@@ -1,3 +1,4 @@
+import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
@@ -13,7 +14,7 @@ ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <div>ProtoType</div>
-      <div>이어서 계속...</div>
+      <div>Webpack...적용</div>
     </BrowserRouter>
   </Provider>,
   document.getElementById('root')
