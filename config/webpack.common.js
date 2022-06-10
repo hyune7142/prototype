@@ -49,6 +49,9 @@ module.exports = {
   // 웹팩 결과물 출력 옵션
   output: {
     // 경로 및 파일명 지정
+    // hash : build 시 마다 변경, 각 chunk도 같은 hash 값을 가짐
+    // chunkhash : webpack entry를 기반으로 정의되어 고유의 hash 값을 가짐 (변경이 일어난 entry의 hash만 변경)
+    // contenthash : 추출된 content에 의해 계산되는 hash 값을 가짐 (변경이 일어난 file의 hash만 변경)
     path: path.resolve(__dirname, '../build'),
     filename: 'js/[name].[contenthash:8].js',
   },
